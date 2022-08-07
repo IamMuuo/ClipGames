@@ -63,6 +63,8 @@ font = pygame.font.SysFont(None, 48)
 gameOverSound = pygame.mixer.Sound('Assets/gameover.wav')
 pygame.mixer.music.load('Assets/background.wav')
 
+pygame.mixer.music.play()
+
 
 # setup textures
 playerTexture = pygame.image.load('Assets/player.png')
@@ -108,6 +110,9 @@ while True:
                 terminate() # exit the game
 
             if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_ESCAPE:
+                    terminate()
+
                 if event.key == pygame.K_z:
                     reverseCheat = True
 
@@ -136,6 +141,9 @@ while True:
             # key up movements
 
             if event.type == pygame.KEYUP:
+                if event.key == pygame.K_ESCAPE:
+                    terminate()
+                    
                 if event.key == pygame.K_z:
                     reverseCheat = False
 
@@ -234,11 +242,11 @@ while True:
 
         mainClock.tick(FPS)
 
-    pygame.mixer.music.stop()
-    gameOverSound.play()
+pygame.mixer.music.stop()
+gameOverSound.play()
 
 
-    waitForPlayerToPressKey()
+waitForPlayerToPressKey()
 
 
 

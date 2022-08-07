@@ -14,3 +14,17 @@ Just for fun, they'll be cheat modes to this game. If the player
 holds down the X key, every baddie’s speed is reduced to a super slow rate.
 If the player holds down the Z key, the baddies will reverse their direction
 and travel up the screen instead of down.
+
+## How to run
+Ensure that python and pip are installed
+
+run
+
+```
+$ pip install pygame
+
+$ python main.py
+
+```
+
+If everything goes well a window would be launced ready for you to enjoy
