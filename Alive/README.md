@@ -27,5 +27,6 @@ Running the above will cause your computer to run on the machine
 
 if all goes well youll have an executable called alive
 
-run the executable and you will have a 640x480 black window pop up
+run the executable and you will have a 640x480 black window pop up with a rectangle in 
+the middle
 

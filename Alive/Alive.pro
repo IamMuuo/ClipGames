@@ -10,3 +10,6 @@ LIBS += \
     /lib/libsfml-graphics.so \
     /lib/libsfml-window.so \
     /lib/libsfml-system.so
+
+OTHER_FILES +=\
+    README.md
