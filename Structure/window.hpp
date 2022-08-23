@@ -23,11 +23,13 @@ public:
     bool isDone();
     bool isFullScreen();
 
-    sf::Vector2u getWindowSize();
+    sf::Vector2i getWindowSize();
 
     void ToggleFullScreen();
 
     void Draw(sf::Drawable& l_drawable);
+
+    void setFrameLimit(int8_t limit);
 
 private:
     void setup(const std::string& l_title, sf::Vector2i l_size);

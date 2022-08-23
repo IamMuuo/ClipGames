@@ -13,12 +13,12 @@ public:
     void render();
     Window* getWindow();
 
+    void movePikachu();
+
 private:
     void moveSprite();
     Window m_Window;
     sf::Sprite pikachuSprite;
     sf::Texture pickachuTexture;
-
-    void movePikachu();
 };
 

@@ -76,3 +76,13 @@ bool Window::isDone()
 {
     return m_isDone;
 }
+
+void Window::setFrameLimit(int8_t limit)
+{
+    m_window.setFramerateLimit(limit);
+}
+
+sf::Vector2i Window::getWindowSize()
+{
+    return m_windowSize;
+}
